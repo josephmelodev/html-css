@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 9 - aula 1</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <h1>Trabalhando com listas</h1>
+
+    <h2>Todas as tags usadas na aula em lista</h2>
+
+    <ul>
+        <li>ul - un-ordened list - lista não ordenada (atributos: type="disc"/type="circle"/type="square")</li>
+        <li>ol - ordenet list - lista ordenada (atributos: type=a/A/1/I [definir numeração] e start="n" [o n é de onde começar a lista])</li>
+        <li>li - list item - item de lista - colocar para cara item da lista</li>
+        <li>dl - definition list - lista de definição</li>
+        <li>dt - definition term - termo de definição - termo que deverá ser definido na próxima tag</li>
+        <li>dd - description definition - descrição da definição - descrever o termo da tag de cima</li>
+    </ul>
+
+    <h2>Listas ordenadas</h2>
+    <ol>
+        <li>Estudar</li>
+        <li>Dormir</li>
+        <li>Comer</li>
+        <li>Trabalhar</li>
+    </ol>
+
+        <p>Listas ordenadas usando outra numeração</p>
+
+    <ol type="I" start="4">
+        <li>Dentro da tang ol</li>
+        <li>tem opção dos atributos</li>
+        <li>type para definir numeração</li>
+        <li>start para selecionar de onde começa</li>
+    </ol>
+
+    <h2>Lista não ordenadas</h2>
+    <ul type="disc"> <!--Opções disponiveis são disc - square - circle-->
+        <li>Pão</li>
+        <li>Açucar</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Frango</li>
+        <li>Coração</li>
+    </ul>
+    
+    <h2>Juntando listas v.1</h2>
+    <h3>Como vou começar</h3>
+    <ol>
+        <li>Vou fazer</li>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>php</li>
+        </ol>
+        <li>Talvez farei</li>
+        <ul type="circle">
+            <li>Java</li>
+
+        </ul>
+    </ol>
+
+    <h2>Testando multiplas listas</h2>
+        <ul type="disc">
+            <li>teste 1</li>
+                <ul type="square">
+                    <li>1.1</li>
+                        <ul type="circle">
+                            <li>1.1.1</li>
+                            <li>1.1.2</li>
+                        </ul>
+                    <li>1.2</li>
+                       <ul type="circle">
+                            <li>1.2.1</li>
+                            <li>1.2.2</li>
+                        </ul>
+                </ul>
+            <li>teste 2</li>
+            <ul type="square">
+                    <li>2.1</li>
+                        <ul type="circle">
+                            <li>2.1.1</li>
+                            <li>2.1.2</li>
+                        </ul>
+                    <li>2.2</li>
+                       <ul type="circle">
+                            <li>2.2.1</li>
+                            <li>2.2.2</li>
+                        </ul>
+                </ul>
+            <li>teste 3</li>
+            <ul type="square">
+                    <li>3.1</li>
+                        <ul type="circle">
+                            <li>3.1.1</li>
+                            <li>3.1.2</li>
+                        </ul>
+                    <li>3.2</li>
+                       <ul type="circle">
+                            <li>3.2.1</li>
+                            <li>3.2.2</li>
+                        </ul>
+                </ul>
+        </ul type="disc">
+
+       
+     <h2>Listas de definição</h2>
+
+     <dl>
+        <dt>termo a ser definido</dt>
+        <dd>definição do termo escolhido</dd>
+        <dt>usar dt para o termo</dt>
+        <dd>usad dd para a definição</dd>
+        <p>Exemplo:</p>
+        <dt>HTML</dt>
+        <dd>Lingragem de Marcação para criação de conteúdo de um site</dd>
+     </dl>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias no HTML</title>
+    
+</head>
+<body>
+
+    <h1>Mídias de tamanhos diferentes</h1>
+    <p>Testaremos 3 tamanhos de imagens diferentes com a tag <code>&lt;picture&gt;</code>, diminua e aumente a janela do seu navegador para testar</p>
+   
+    <pre>
+        <code>
+            &lt;picture&gt;
+                &lt;source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png"&gt;
+                &lt;source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png"&gt;
+                &lt;img src="imagens/g.png" alt="imagem-grande"&gt;
+            &lt;/picture&gt;
+        </code>
+    </pre>
+    <p>na tag &lt;source&gt;, existe os atributos media="max-width: 000px" srcset="img.png" e type="image/png", sendo:</p>
+    <ul>
+        <li>media = max-width que significa que a imagem selecionada ficara até o navegador atingir aquele tamanho maximo em pixels e min o tamanho minimo de pixels</li>
+        <li>srcset = você coloca o caminho do arquivo que será setado de acordo com o tamanho selecionado acima</li>
+        <li>type = verificar a lista de arquivos/tipo para não colocar errado</li>
+        <li>lembrar de seguir a ordem, maior para menor ou menor para maior</li>
+    </ul>
+
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/p.png" alt="imagem-grande">
+    </picture>
+
+    <iframe src="" frameborder="0"></iframe>
+  
+
+</body>
+</html>
