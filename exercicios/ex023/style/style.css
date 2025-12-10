@@ -1,0 +1,23 @@
+div {
+    border: 2px solid black;
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+    background-image: url(imagens-cap19/wallpaper003.jpg);
+}
+
+div#q1 {
+    background-position: top right;
+}
+
+div#q2 {
+    background-position: bottom right;
+}
+
+div#q3 {
+    background-position: top left;
+}
+
+div#q4 {
+    background-position: bottom left;
+}
