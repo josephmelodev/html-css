@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2</title>
+
+    <style>
+
+        table {
+            width: 650px;
+            height: 300px;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: black;
+            color: white;
+    
+        }
+
+        tr, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th.name {
+            width: 180px;
+        }
+
+       tbody tr:nth-child(2n) {
+            background-color: grey; 
+            color: white;   
+        }
+
+        .man {
+            background-color: white;
+            color: black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <table>
+
+        <!-- CABEÇALHO - LINHA 1-->
+        <thead>
+            <tr>
+                <th scope="col" class="group">GRUPOS</th>
+                <th scope="col" class="name">NOME</th>
+                <th scope="colgroup" colspan="3">FILMES</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+        <!-- CABEÇALHO - LINHAS 6-->
+            <tr>
+                <th scope="rowgroup" rowspan="3">MULHERES</th>
+                <td>ANA MARIA</td>
+                <td>ALIEN</td>
+                <td>RAMBO</td>
+                <td>VINGADORES</td>
+            </tr>
+            <tr>
+                <td>BEATRIZ SOUZA</td>
+                <td>HULK</td>
+                <td>INCEPTION</td>
+                <td>BATMAN</td>
+            </tr>
+            <tr>
+                <td>CLAUDIA MELO</td>
+                <td>OBLIVION</td>
+                <td>MATRIX</td>
+                <td>BIG HERO</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3" class="man">HOMENS</th>
+                <td>BRUNO MENDONÇA</td>
+                <td>INTOCAVEIS</td>
+                <td>AMNÉSIA</td>
+                <td>GLADIADOR</td>
+            </tr>
+            <tr>
+                <td>DANIEL LOURENÇO</td>
+                <td>WALL-E</td>
+                <td>OLDBOY</td>
+                <td>DANGAL</td>
+            </tr>
+            <tr>
+                <td>FABIANO MOTA</td>
+                <td>STAR WARS 5</td>
+                <td>TAXI DRIVER</td>
+                <td>TOY STORE</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+</body>
+
+</html>
