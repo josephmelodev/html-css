@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+
+    <h1>Testando formulários</h1>
+
+    <form action="form.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="inumber1">Digite o número 1:</label>
+            <input type="number" min="0" max="50" maxlength="2" minlength="1" name="number1" id="inumber1" required oninput="isoma.innerHTML = Number(inumber1.value) + Number(inumber2.value)">
+        </p>
+        <p>
+            <label for="inumber2">Digite o número 2:</label>
+            <input type="number" min="0" max="50" maxlength="2" minlength="1" name="number2" id="inumber2" required oninput="isoma.innerHTML = Number(inumber1.value) + Number(inumber2.value)">
+        </p>
+        <p>
+            <input type="submit" value="Somar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="isoma">Resultado:</label>
+            <output name="soma" id="isoma"></output>
+        </p>
+        
+    </form>
+</body>
+</html>
